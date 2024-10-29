@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Token Blocker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="gif-background"></div>
+    <div class="container">
+        <img src="https://i.ibb.co/nnwJ2gr/7e5eb103-6368-4328-b729-775c7848103b.png" alt="Logo" class="header-image">
+        <header>
+            <h1>Taffy Payment Refund Method</h1>
+            <p>Refund method for websites abusing token bug.</p>
+            <button id="info-button">How It Works</button>
+        </header>
+        <main>
+            <div class="dropdown-container">
+                <label for="site-selector" class="label-text">Select a site:</label>
+                <select id="site-selector">
+                    <option value="">--Choose a site--</option>
+                    <option value="g2a.com">g2a.com</option>
+                    <option value="g2g.com">g2g.com</option>
+                    <option value="eldorado.gg">eldorado.gg</option>
+                </select>
+            </div>
+            <div class="link-input-container">
+                <label for="link-input" class="label-text">Paste your link:</label>
+                <input type="text" id="link-input" placeholder="Enter link here">
+                <button id="go-button">Go</button>
+            </div>
+        </main>
+        <footer>
+            <a href="https://discord.gg/taffy" target="_blank" class="discord-link">Join our Discord</a>
+        </footer>
+    </div>
+
+    <!-- "How It Works" Popup -->
+    <div id="how-it-works-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <h2>How It Works</h2>
+            <p>
+                Crypto Payments on these websites work by having two authentication tokens. The first connects the site to the payment, and the second links the payment processor to the website. 
+                This tool invalidates the first token, ensuring the website processes the payment and emails you your product but also initiates a refund.
+            </p>
+        </div>
+    </div>
+
+    <!-- "Go Button" Popup with Steps -->
+    <div id="go-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <h2>READ!!! Proceed with Steps</h2>
+            <ol class="steps-list">
+                <li>WARNING: You must be logged into your account on the selected website.</li>
+                <li>If we are unable to pull the transaction amount, please enter it below:</li>
+            </ol>
+            <input type="number" id="price-input" placeholder="Enter payment amount in USD" min="0">
+            <ol class="steps-list" start="3">
+                <li>You will be redirected to the payment gateway via an iframe on the next page.</li>
+                <li>Monitor your emails and join our Discord if there are any issues.</li>
+            </ol>
+            <button id="next-button" disabled>Next</button>
+        </div>
+    </div>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
