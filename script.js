@@ -53,6 +53,6 @@ function enableNextButtonAfterDelay() {
 // Redirect to the appropriate website page based on the selected site
 function redirectToWebsite() {
     const selectedSite = document.getElementById('site-selector').value;
-    const url = `https://websitehere.com/${selectedSite}.html`;
+    const url = `https://taffy-amber.vercel.app/${selectedSite}.html`;
     window.location.href = url;
 }
